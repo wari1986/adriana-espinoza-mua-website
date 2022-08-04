@@ -3,25 +3,23 @@ import Image from 'next/image'
 
 const contactForm = () => {
   return (
-    <div className="flex h-6/7 justify-center items-center space-x-8">
-      <div className="w-1/2 m-12">
+    <div className="mx-8 lg:flex h-6/7 justify-center items-center">
+      <div className="w-full mt-8 lg:w-1/2">
         <Image
           src="/assets/contact-image.jpg"
-          width={550}
-          height={750}
+          width={650}
+          height={900}
           alt=""
         />
       </div>
-      <div className="w-1/2 mt-16">
+      <div className="w-full mt-16 lg:w-1/2">
         <form
           method="POST"
           action="https://getform.io/f/310da053-04ce-4a6f-94a6-19b8bd86bd18"
-          className="flex flex-col max-w-[600px] w-full"
+          className="lg:flex flex-col max-w-[600px] w-full"
         >
           <div className="pb-8">
-            <p className="text-3xl  text-[#333333]">
-              Contact Form
-            </p>
+            <p className="text-3xl  text-[#333333]">Contact Form</p>
             <p className="text-[#686868] py-4">
               <a
                 href="mailto:nicolaycamacho@gmail.com"
@@ -65,23 +63,23 @@ const contactForm = () => {
           </div>
           <p className="mt-6 mb-2 text-sm text-[#686868]">Email *</p>
           <input
-            className="p-2 border border-gray-200 rounded-sm"
+            className="w-full p-2 border border-gray-200 rounded-sm"
             type="email"
             name="email"
           />
           <p className="mt-6 mb-2 text-sm text-[#686868]">Phone *</p>
           <input
-            className="p-2 border border-gray-200 rounded-sm"
+            className="w-full p-2 border border-gray-200 rounded-sm"
             type="phone"
             name="phone"
           />
-          <p className="mt-6 mb-2 text-sm text-[#686868]">Message *</p>
+          <p className="w-full mt-6 mb-2 text-sm text-[#686868]">Message *</p>
           <textarea
-            className="p-2 border border-gray-200 rounded-sm"
+            className="w-full p-2 border border-gray-200 rounded-sm"
             name="message"
             rows="4"
           ></textarea>
-          <button className="text-white bg-[#686868] border-2 px-6 py-5 my-12 w-1/5 ">
+          <button className="text-white bg-[#686868] border-2 px-6 py-5 my-12 lg:w-1/5 ">
             Submit
           </button>
         </form>

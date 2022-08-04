@@ -6,18 +6,27 @@ import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex h-screen w-full pr-8">
+    <div className="flex h-screen">
       <Head>
         <title>Adriana Espinoza MUA</title>
       </Head>
-      <main className="w-5/6">{children}</main>
-      <div className="w-1/6 flex flex-col justify-between py-12 text-right">
-        <header>
+      {/* <div className="w-1/6 flex flex-col justify-between py-12 text-right"> */}
+      <div className="w-full lg:flex">
+        <div className="lg:hidden">
           <Navbar />
-        </header>
-        <footer>
+        </div>
+        <main className="w-full lg:w-5/6">{children}</main>
+        <div className="lg:hidden">
           <Footer />
-        </footer>
+        </div>
+        <div className="hidden lg:flex flex-col w-1/6 justify-between">
+          <header className="flex justify-end"  >
+            <Navbar />
+          </header>
+          <footer className="">
+            <Footer />
+          </footer>
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,12 @@
 import Image from "next/image";
+import HeroImage from "../components/HeroImage";
 
 export default function Home() {
   return (
-    <div className="flex justify-center h-screen">
-      {/* <div className="w-1/3"></div> */}
-      <div className="w-2/5 flex justify-center">
-        <Image src="/assets/hero-image.jpeg" width={650} height={850} alt="" />
+    <div className="flex justify-center">
+      <div className="w-full lg:mt-8 lg:w-2/5 ">
+        <HeroImage />
       </div>
-      {/* <div className="w-1/3"></div> */}
     </div>
   );
 }
