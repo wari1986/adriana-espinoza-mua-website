@@ -1,10 +1,15 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { AiOutlineShareAlt } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="text-xs text-[#666666] px-4 pt-4 lg:mb-8">
+    <div className="text-xs text-[#666666] px-4 pt-12 md:pt-4 md:mb-8 lg:mb-8">
       <div className="flex justify-center lg:justify-end space-x-3 my-4">
         <a
           href="https://www.facebook.com/AdrianaEspinozaMua/photos"
@@ -27,8 +32,8 @@ const Footer = () => {
         >
           <FaTiktok />
         </a>
-        <a href="www.facebook.com" target="_blank" rel="noreferrer">
-          <AiOutlineShareAlt />
+        <a href="https://wa.me/+59174350041" target="_blank" rel="noreferrer">
+          <FaWhatsapp />
         </a>
       </div>
       <div className="flex justify-center lg:justify-end">

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // import { Cart } from "./";
 // import { useStateContext } from "../context/StateContext";
-import {FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex py-4 lg:flex-col-reverse lg:pt-8 px-4">
+      <div className="flex py-4 md:flex-col-reverse lg:flex-col-reverse lg:pt-8 px-4">
         {/* Toogle button */}
         <div
           onClick={handleClick}
@@ -21,7 +21,7 @@ const Navbar = () => {
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
-        <div className="invisible space-y-0 lg:text-sm lg:space-y-4 lg:my-12 text-[#666666] lg:visible  text-right">
+        <div className="invisible space-y-0 md:my-12 lg:text-sm lg:space-y-4 lg:my-12 text-[#666666] md:visible lg:visible text-right">
           <p className="active:text-[#333333] text-bold">
             <Link href="/">Home</Link>
           </p>
@@ -35,10 +35,14 @@ const Navbar = () => {
             <button className="pl-2">+</button>
           </div>
         </div>
-        <div>
-          <p className="text-xl text-[#2B2B2B] text-right lg:text-3xl ">
-            <Link href="/">ADRIANA ESPINOZA makeup artist | hairstylist</Link>
-          </p>
+        <div className="flex justify-end items-center w-full">
+          <Link href="/">
+            <p className="text-xl text-[#2B2B2B] text-right  lg:text-2xl">
+              ADRIANA ESPINOZA
+              <br />
+              makeup artist |<br/> hairstylist
+            </p>
+          </Link>
         </div>
       </div>
 
@@ -52,12 +56,7 @@ const Navbar = () => {
           }
         >
           <li className="py-1 text-xs">
-            <Link
-              onClick={handleClick}
-              href="/"
-              smooth={true}
-              duration={500}
-            >
+            <Link onClick={handleClick} href="/" smooth={true} duration={500}>
               Home
             </Link>
           </li>
