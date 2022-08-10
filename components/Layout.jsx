@@ -9,6 +9,20 @@ const Layout = ({ children }) => {
     <div className="flex">
       <Head>
         <title>Adriana Espinoza MUA</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          content="Portfolio website for adriana espinoza makeup artist"
+        />
+        <meta name="url" content="http://www.adrianaespinoza.com" />
+        <meta
+          name="keywords"
+          content="makeup artist, hairstylist, beauty, self-care, special effects, wedding"
+        />
+        <meta name="language" content="en-US" />
+        <meta name="robots" content="index" />
+
       </Head>
       {/* <div className="w-1/6 flex flex-col justify-between py-12 text-right"> */}
       <div className="w-full h-screen md:flex lg:flex">
