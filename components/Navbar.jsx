@@ -36,13 +36,15 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex justify-end items-center w-full">
-          <Link href="/">
-            <p className="text-xl text-[#2B2B2B] text-right  lg:text-2xl">
-              ADRIANA ESPINOZA
-              <br />
-              makeup artist |<br/> hairstylist
-            </p>
-          </Link>
+          <p className="text-xl text-[#2B2B2B] text-right  lg:text-2xl">
+            <Link href="/">
+              <a>
+                ADRIANA ESPINOZA
+                <br />
+                makeup artist |<br /> hairstylist
+              </a>
+            </Link>
+          </p>
         </div>
       </div>
 
